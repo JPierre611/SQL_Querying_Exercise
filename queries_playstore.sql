@@ -31,7 +31,7 @@ SELECT app_name, price, rating FROM analytics
 
 -- query 8 --
 SELECT app_name FROM analytics
-  WHERE min_installs <= 50 AND rating <= 5
+  WHERE min_installs <= 50 AND rating IS NOT NULL
   ORDER BY rating DESC;
 
 -- query 9 --
